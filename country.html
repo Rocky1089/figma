@@ -14,6 +14,7 @@
             <h5 class="warn-icon">Warning</h5><br>
             <p class="warning">Once you choose your account region, you can no longer change it</p>
          <div class="count">
+            <form action="" id="form">
          <label for="country">Country</label><br>
          <select name="" id="country">
             <option>US (United State)</option>
@@ -34,10 +35,17 @@
             <option>Oyo</option>
             <option>FCT</option>
         </select><br><br>
-        <label for="city">City</label>
-        <label for="code" class="code">Postal Code</label></p>
         <div class="city">
-        <input type="text" placeholder="Your City"><input type="text" placeholder="Enter Code">
+        <div>
+        <label for="city">City</label><br>
+        <input type="text" id="city" placeholder="Your City">
+        <small id="cityErr"></small>
+       </div>
+       <div>
+        <label for="code" class="code">Postal Code</label></p>
+        <input type="text" id="code" placeholder="Enter Code">
+        <small id="codeErr"></small>
+    </div>
         </div><br>
         <label for="text">Language</label><br>
         <select name="" id="lang">
@@ -47,9 +55,11 @@
             <option>English (Ireland)</option>
             <option>Espanol (Spanish)</option>
             <option>Francais (French)</option>
-        </select><br><br><br><br>
-        <button id="done">Done</button>
+        </select><br><br><br>
+        <button id="done" type="submit">Done</button>
+    </form>
          </div>
-      </section>
+         <section></section>
+      <script src="country.js"></script>
 </body>
 </html>

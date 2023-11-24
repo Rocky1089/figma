@@ -12,20 +12,28 @@
         <div id="form-box">
           <i class="fa-regular fa-user" id="user"></i><br>
           <i class="fa-solid fa-camera-retro" id="cam"></i><br><br>
-          <form action="">
+          <form action="" id="form">
             <div class="sign-form">
               <label for="text">First Name</label><br>
-              <input type="text" placeholder="First Name"><br><br>
+              <input type="text" id="firstName" placeholder="First Name">
+              <small id="firstNameErr"></small><br><br>
               <label for="text">Last Name</label><br>
-              <input type="text" placeholder="Last Name"><br><br>
+              <input type="text" id="lastName" placeholder="Last Name">
+              <small id="lastNameErr"></small><br><br>
               <label for="DOB">Date Of Birth</label>
-              <input type="date" id="dob"><br><br>
+              <input type="date" id="dob">
+              <small id="dobErr"></small><br><br>
               <label for="number">Phone Number</label>
-              <input type="text" placeholder="Phone Number">
+              <input type="text" id="phoneNo" placeholder="Phone Number">
+              <small id="phoneNoErr"></small>
             </div>
-          </form><br><br><br>
-          <button id="back"> <a href="index.html" class="back">Back</a></button> <button id="next"><a href="country.html" class="next">Next</button>
+          <br><br>
+          <button id="back"> <a href="index.html" class="back">Back</a></button> 
+          <button id="next" type="submit">Next</button>
+        </form>
         </div>
       </section>
+      <script src="form.js"></script>
+      <script src="country.js"></script>
 </body>
 </html>
